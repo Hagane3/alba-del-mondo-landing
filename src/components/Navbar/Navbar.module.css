@@ -44,7 +44,8 @@
   left: 0;
   width: 100%;
   background-color: var(--bg-secondary);
-  height: 50vh;
+  /* height: 50vh; */
+  padding: 2.53125rem 0;
 }
 
 .root .menu_list.active li:nth-child(6) button {
