@@ -1,0 +1,112 @@
+.root {
+  background-color: var(--bg-secondary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.95375rem 1rem;
+}
+
+.root .btn {
+  background: transparent;
+  border: none;
+  width: 2.3rem;
+  height: 1.3rem;
+}
+
+.close {
+  position: absolute;
+  top: 1.34375rem;
+  right: 1rem;
+}
+
+.root .logo {
+  width: 3.3rem;
+  height: 2rem;
+}
+
+.root .menu_list {
+  display: none;
+  font-family: "Bebas Neue", cursive;
+  color: var(--font-secondary);
+  list-style-type: none;
+  align-items: center;
+  gap: 2.5rem;
+  font-size: 1.5rem;
+}
+
+.root .menu_list.active {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--bg-secondary);
+  height: 50vh;
+}
+
+.root .menu_list.active li:nth-child(6) button {
+  color: var(--font-tertiary);
+}
+
+.root .menu_list li {
+  display: flex;
+  letter-spacing: 0.1em;
+}
+
+.root .menu_list li button {
+  font-family: "Bebas Neue", cursive;
+  color: var(--font-secondary);
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  letter-spacing: 0.1em;
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+  .root {
+    justify-content: center;
+    gap: 6.875rem;
+    padding: 0.625rem 2.5rem;
+    min-height: 3.75rem;
+    height: 5rem;
+    box-shadow: inset 0px 0px 0px 1px hsl(0, 0%, 14%);
+    background-color: var(--bg-quaternary);
+  }
+
+  .root .logo {
+    width: 6rem;
+    height: 3.75rem;
+    position: absolute;
+    left: 2.5rem;
+  }
+  .root .btn {
+    display: none;
+  }
+
+  .root .menu_list {
+    display: flex;
+  }
+
+  .root .menu_list li:nth-child(6) button {
+    background-color: var(--bg-quinary);
+    padding: 0.5rem 1.1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .root .menu_list {
+    gap: 4rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .root .menu_list {
+    gap: 6.875rem;
+  }
+}
