@@ -11,4 +11,5 @@ body {
   background-color: var(--bg-primary);
   font-family: "Roboto Condensed", sans-serif;
   color: var(--font-primary);
+  height: 400vh;
 }
