@@ -5,9 +5,11 @@
   --bg-secondary: hsl(0, 10%, 6%);
   --bg-tertiary: hsl(15, 78%, 55%);
   --bg-quaternary: hsl(23, 19%, 8%);
+  --bg-quinary: hsl(205, 46%, 56%);
 
   /* Font color palette */
 
   --font-primary: hsl(240, 3%, 13%);
   --font-secondary: hsl(0, 0%, 96%);
+  --font-tertiary: hsl(205, 46%, 56%);
 }
