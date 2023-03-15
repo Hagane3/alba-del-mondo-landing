@@ -1,0 +1,12 @@
+:root {
+  /* Background color palette */
+
+  --bg-primary: hsl(0, 0%, 96%);
+  --bg-secondary: hsl(0, 10%, 6%);
+  --bg-tertiary: hsl(15, 78%, 55%);
+
+  /* Font color palette */
+
+  --font-primary: hsl(240, 3%, 13%);
+  --font-secondary: hsl(0, 0%, 96%);
+}
