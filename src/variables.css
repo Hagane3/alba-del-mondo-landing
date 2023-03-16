@@ -13,4 +13,8 @@
   --font-secondary: hsl(0, 0%, 96%);
   --font-tertiary: hsl(205, 46%, 56%);
   --font-quaternary: hsl(15, 78%, 55%);
+
+  /* Dot color palette */
+
+  --dot-regular: hsl(0, 0%, 38%);
 }
