@@ -1,0 +1,123 @@
+.root {
+  margin-bottom: 2.5rem;
+}
+
+.root .heading {
+  background-color: var(--bg-tertiary);
+  text-align: center;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.root .members {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1.25rem;
+  row-gap: 1rem;
+  margin: 0 1rem;
+}
+
+.root .members .heading {
+  display: none;
+}
+
+.root .members .member img {
+  width: 100%;
+  height: auto;
+}
+
+.root .members .member .description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.root .members .member .description h4 {
+  color: var(--font-quaternary);
+  letter-spacing: 0.1rem;
+  font-size: 0.875rem;
+}
+
+.root .members .member .description span {
+  display: none;
+}
+
+.root .members .member .description p {
+  letter-spacing: 0.1rem;
+  font-size: 0.8125rem;
+}
+
+@media (min-width: 1024px) {
+  .root {
+    margin-top: 12.5rem;
+  }
+
+  .root .heading {
+    display: none;
+  }
+
+  .root .members .member .description h4 {
+    font-size: 1.125rem;
+  }
+
+  .root .members .member .description p {
+    font-size: 1.125rem;
+  }
+
+  .root .members .member .description span {
+    display: inline;
+  }
+
+  .root .members .member .description {
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .root .members {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .root .members .heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2/3;
+    grid-row: 1;
+    height: 10.5rem;
+  }
+
+  .root .members .member:nth-child(2) {
+    grid-column: 1/2;
+    grid-row-start: 1;
+  }
+
+  .root .members .member:nth-child(3) {
+    grid-column: 2/3;
+    grid-row-start: 1;
+    position: relative;
+    top: 12rem;
+  }
+
+  .root .members .member:nth-child(7) {
+    grid-column: 3/4;
+    grid-row-start: 1;
+  }
+
+  .root .members .member:nth-child(5) {
+    grid-column: 1/2;
+    grid-row-start: 2;
+  }
+
+  .root .members .member:nth-child(6) {
+    grid-column: 2/3;
+    grid-row-start: 2;
+    position: relative;
+    top: 12rem;
+  }
+
+  .root .members .member:nth-child(4) {
+    grid-column: 3/4;
+    grid-row-start: 2;
+  }
+}
