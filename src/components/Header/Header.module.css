@@ -1,0 +1,62 @@
+.root {
+  height: 100vh;
+  padding: 7.5rem 3rem 4.28rem 3rem;
+  background-image: url("../../../public//img/background_mobile.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.root .content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.root .content .logo {
+  width: 100%;
+  max-width: 32rem;
+  height: auto;
+}
+
+.root .content .heading {
+  text-align: center;
+}
+
+.arrow_down {
+  background: none;
+  border: none;
+}
+
+.arrow_down img {
+  width: 4rem;
+  height: 4rem;
+}
+
+@media (min-width: 1024px) {
+  .root {
+    background-image: url("../../../public//img/background_desktop.png");
+    background-position: top;
+    padding: 0;
+  }
+
+  .arrow_down {
+    display: none;
+  }
+
+  .root .content .heading h1 {
+    font-size: 6rem;
+  }
+
+  .root .content .heading h2 {
+    font-size: 3rem;
+  }
+
+  .root .content {
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 2.8rem;
+  }
+}
