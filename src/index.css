@@ -35,5 +35,7 @@ h2 {
 
 h3 {
   font-size: 2.5rem;
+  font-weight: 300;
+  color: var(--font-secondary);
   font-family: "Bebas Neue", cursive;
 }
