@@ -82,4 +82,8 @@
     font-size: 1.5rem;
     line-height: 2.75rem;
   }
+
+  .root .container .heading h3 {
+    font-size: 4rem;
+  }
 }

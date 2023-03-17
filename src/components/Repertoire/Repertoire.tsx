@@ -21,18 +21,19 @@ const Repertoire = () => {
         </div>
         <div className={classes.content}>
           <p>
-            Georg Philipp Telemann był wybitnym niemieckim kompozytorem okresu
-            późnego baroku, rówieśnikiem Bacha i Händla. Za życia znany był jako
-            jeden z najbardziej produktywnych i wszechstronnych muzyków. Wiele
-            spośród jego kompozycji stanowi owoc postawy oświeceniowej,
-            zwróconej ku człowiekowi - „kto przydaje się wielu, czyni lepiej niż
-            ten, który pisze dla kilku”. W latach 1720-1750 zgodnie z rosnącym
-            znaczeniem społecznym aspirującej klasy średniej, publikowane
-            wówczas regularnie czasopisma zajmowały się moralną poprawą i
-            racjonalną organizacją życia, których celem było ziemskie szczęście.
-            Oszczędność, umiar i porządek jawiły się jako cnoty nadrzędne. Georg
-            Philipp Telemann w swoich „Moralische Kantaten” z muzycznym dowcipem
-            i poetyckim wdziękiem dokumentuje epokę Oświecenia.
+            Repertuar tego koncertu stanowią różnorodne kantaty
+            najwybitniejszych francuskich kompozytorów okresu baroku. Wszystkie
+            jednak łączy wspólna tematyka – miłosne perypetie mitologicznych,
+            czy też pastoralnych postaci. W programie odnaleźć można kantaty o
+            zróżnicowanym składzie instrumentalnym, przeznaczone na głosy solowe
+            – sopran (dessus) i baryton (basse-taille). Reprezentują one różne
+            stadia rozwoju gatunku kantaty we Francji – od pionierskich
+            kompozycji Jeana-Baptiste'a Morina i André Campry po mistrzowskie
+            formy Jeana-Philippa Rameau, Michela Pignoleta de Montéclaira oraz
+            Josepha Bodina de Boismortiera. Cechuje je charakterystyczne
+            malarstwo dźwiękowe, doskonałość miniaturowej formy oraz
+            quasi-operowa narracja. Czy burzliwe losy mitologicznych i
+            pastoralnych bohaterów odnajdą ukojenie pośród muz?
           </p>
         </div>
         <div className={classes.switcher}>

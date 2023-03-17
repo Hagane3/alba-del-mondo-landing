@@ -49,11 +49,15 @@
 
 @media (min-width: 1024px) {
   .root {
-    margin-top: 12.5rem;
+    margin: 12.5rem 2.5rem 0 2.5rem;
   }
 
   .root .heading {
     display: none;
+  }
+
+  .root .members {
+    margin: 0;
   }
 
   .root .members .member .description h4 {
@@ -85,6 +89,10 @@
     grid-column: 2/3;
     grid-row: 1;
     height: 10.5rem;
+  }
+
+  .root .members .heading h3 {
+    font-size: 4rem;
   }
 
   .root .members .member:nth-child(2) {

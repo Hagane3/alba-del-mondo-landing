@@ -58,7 +58,7 @@
 
 @media (min-width: 1024px) {
   .root {
-    margin: 26rem 1rem 0 1rem;
+    margin: 26rem 2.5rem 0 2.5rem;
     display: flex;
     gap: 8.4375rem;
   }
@@ -83,12 +83,11 @@
     position: relative;
   }
 
-  .root .container .content {
-    margin-top: 3.5rem;
+  .root .image {
+    margin-top: 1.5rem;
   }
 
   .root .container .switcher {
-    /* margin-top: 12.25rem; */
     gap: 2.59rem;
     position: absolute;
     bottom: 3rem;
