@@ -1,0 +1,112 @@
+.root .heading {
+  background-color: var(--bg-tertiary);
+  text-align: center;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.root .image {
+  height: 19rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.root .image img {
+  width: 100%;
+  height: auto;
+  transform: translateY(-2rem);
+}
+
+.root .container {
+  margin: 1.5rem 1rem 0 1rem;
+}
+
+.root .container .sub_heading h4 {
+  color: var(--font-quaternary);
+  font-size: 2.125rem;
+  font-family: "Bebas Neue", cursive;
+}
+
+.root .container .sub_heading h5 {
+  font-size: 2.125rem;
+  font-family: "Bebas Neue", cursive;
+}
+
+.root .container .content {
+  margin-top: 1rem;
+}
+
+.root .container .content p {
+  line-height: 1.5rem;
+  letter-spacing: 0.01rem;
+}
+
+.switcher {
+  display: flex;
+  justify-content: center;
+  gap: 0.9rem;
+  margin-top: 2.5rem;
+}
+
+.switcher .dot {
+  height: 0.77625rem;
+  width: 0.77625rem;
+  background-color: var(--dot-regular);
+  content: " ";
+  border-radius: 50%;
+}
+
+@media (min-width: 1024px) {
+  .root {
+    margin: 26rem 2.5rem 0 2.5rem;
+    display: flex;
+    gap: 8.4375rem;
+  }
+
+  .head_container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .root .image {
+    height: auto;
+    transform: none;
+  }
+
+  .root .heading {
+    font-size: 4rem;
+    padding: 2rem 6.125rem;
+  }
+
+  .root .container {
+    margin: 0;
+    position: relative;
+  }
+
+  .root .image {
+    margin-top: 1.5rem;
+  }
+
+  .root .container .switcher {
+    gap: 2.59rem;
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .root .container .switcher .dot {
+    width: 1.5625rem;
+    height: 1.5625rem;
+  }
+
+  .root .container .sub_heading h4,
+  .root .container .sub_heading h5 {
+    font-size: 3rem;
+  }
+
+  .root .container .content p {
+    font-size: 1.5rem;
+    line-height: 2.75rem;
+  }
+}
