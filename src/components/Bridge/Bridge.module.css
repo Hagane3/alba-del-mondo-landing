@@ -49,4 +49,8 @@
   .root .wrapper .content h3 {
     font-size: 4rem;
   }
+
+  .root .image {
+    max-width: 27.5rem;
+  }
 }
