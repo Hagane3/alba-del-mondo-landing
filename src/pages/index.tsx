@@ -1,4 +1,5 @@
 import About from "@/components/About/About";
+import Bridge from "@/components/Bridge/Bridge";
 import Gallery from "@/components/Gallery/Gallery";
 import Header from "@/components/Header/Header";
 import Navbar from "@/components/Navbar/Navbar";
@@ -14,6 +15,7 @@ export default function Home() {
       <Team />
       <Repertoire />
       <Gallery />
+      <Bridge />
     </>
   );
 }

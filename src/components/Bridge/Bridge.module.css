@@ -1,0 +1,52 @@
+.root {
+  background-color: var(--bg-bridge);
+}
+
+.root .wrapper {
+  padding: 2.875rem 1rem 0 1rem;
+}
+
+.root .content .description {
+  color: var(--font-secondary);
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.75rem;
+  margin-bottom: 2.875rem;
+}
+
+.root .content .description p {
+  line-height: 1.5rem;
+}
+
+.root .image {
+  width: 100%;
+  height: auto;
+  max-width: 27.5rem;
+}
+
+@media (min-width: 1024px) {
+  .root {
+    margin-top: 12.5rem;
+  }
+  .root .wrapper {
+    padding: 3.5rem 2.5rem 2.5rem 3.75rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 8.4375rem;
+    align-items: center;
+  }
+
+  .root .content .description p {
+    /* font-size: 1.5rem; */
+    line-height: clamp(1.5rem, 3vw, 2.75rem);
+    font-size: clamp(1rem, 1.7vw, 1.5rem);
+  }
+  .root .content .description {
+    gap: 3.75rem;
+  }
+
+  .root .wrapper .content h3 {
+    font-size: 4rem;
+  }
+}
