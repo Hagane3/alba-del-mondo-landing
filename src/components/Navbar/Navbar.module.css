@@ -39,6 +39,11 @@
   font-size: 1.5rem;
 }
 
+.root .menu_list li:hover {
+  cursor: pointer;
+  color: var(--font-quaternary);
+}
+
 .root .menu_list.active {
   display: flex;
   justify-content: center;
@@ -99,9 +104,19 @@
     display: flex;
   }
 
+  .root .menu_list li button:hover {
+    cursor: pointer;
+    background-color: var(--bg-tertiary);
+  }
+
   .root .menu_list li:nth-child(6) button {
     background-color: var(--bg-quinary);
     padding: 0.5rem 1.1rem;
+  }
+
+  .root .menu_list li:nth-child(6) button:hover {
+    background-color: var(--bg-tertiary);
+    cursor: pointer;
   }
 }
 
