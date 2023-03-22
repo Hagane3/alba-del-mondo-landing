@@ -1,12 +1,14 @@
 import React from "react";
 import classes from "./About.module.css";
 
+import { Link } from "react-scroll";
+
 import statue from "../../../public/img/statue.png";
 import Image from "next/image";
 
 const About = () => {
   return (
-    <section className={classes.root}>
+    <section id="about" className={classes.root}>
       <div className={classes.container}>
         <div className={classes.heading}>
           <h3>O NAS</h3>
@@ -49,7 +51,12 @@ const About = () => {
         </div>
       </div>
       <div className={classes.cta}>
-        <button className={classes.cta_btn}>SKONTAKTUJ SIĘ Z NAMI</button>
+        <button className={classes.cta_btn}>
+          {" "}
+          <Link to="footer" smooth={true}>
+            SKONTAKTUJ SIĘ Z NAMI
+          </Link>
+        </button>
       </div>
       <div className={classes.img_container}>
         <Image src={statue} alt="statue" className={classes.image} />

@@ -44,8 +44,9 @@
   color: var(--font-quaternary);
 }
 
-.root .menu_list.active {
+.root .menu_list.mobile {
   display: flex;
+  transform: translateY(-100%);
   justify-content: center;
   flex-direction: column;
   gap: 1.5rem;
@@ -56,9 +57,14 @@
   background-color: var(--bg-secondary);
   /* height: 50vh; */
   padding: 2.53125rem 0;
+  transition: transform 0.5s ease;
 }
 
-.root .menu_list.active li:nth-child(6) button {
+.root .menu_list.active {
+  transform: translateY(0);
+}
+
+.root .menu_list.mobile li:nth-child(6) button {
   color: var(--font-tertiary);
 }
 

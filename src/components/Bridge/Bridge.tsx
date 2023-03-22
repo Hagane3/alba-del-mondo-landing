@@ -6,7 +6,7 @@ import img1 from "../../../public/img/bridge.png";
 
 const Bridge = () => {
   return (
-    <section className={classes.root}>
+    <section id="bridge" className={classes.root}>
       <div className={classes.wrapper}>
         <div className={classes.content}>
           <h3>MUSICA DELL'ANIMA</h3>

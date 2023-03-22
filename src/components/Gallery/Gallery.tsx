@@ -11,7 +11,7 @@ import arrow_right from "../../../public/icons/arrow_right.svg";
 
 const Gallery = () => {
   return (
-    <section className={classes.root}>
+    <section id="gallery" className={classes.root}>
       <h3 className={classes.heading}>GALERIA</h3>
       <div className={classes.container}>
         <h3 className={classes.heading}>GALERIA</h3>

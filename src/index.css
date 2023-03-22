@@ -40,3 +40,7 @@ h3 {
   color: var(--font-secondary);
   font-family: "Bebas Neue", cursive;
 }
+
+.active {
+  color: var(--bg-tertiary);
+}
