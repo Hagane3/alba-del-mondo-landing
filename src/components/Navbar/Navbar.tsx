@@ -2,6 +2,8 @@ import React, { useEffect, useState, useRef } from "react";
 import classes from "./Navbar.module.css";
 import Image from "next/image";
 
+import { Link } from "react-scroll";
+
 import logo from "../../../public/img/logo.png";
 import openMenuIcon from "../../../public/icons/open_menu.svg";
 import closeMenuIcon from "../../../public/icons/close_menu.svg";
@@ -53,7 +55,11 @@ const Navbar = () => {
         <li>GALERIA</li>
         <li>FESTIWAL</li>
         <li>
-          <button>KONTAKT</button>
+          <button>
+            <Link to="footer" smooth={true}>
+              KONTAKT
+            </Link>
+          </button>
         </li>
         <button
           className={`${classes.btn} ${classes.close}`}
@@ -69,7 +75,12 @@ const Navbar = () => {
         <li>GALERIA</li>
         <li>FESTIWAL</li>
         <li>
-          <button>KONTAKT</button>
+          <button>
+            {" "}
+            <Link to="footer" smooth={true}>
+              KONTAKT
+            </Link>
+          </button>
         </li>
         <button
           className={`${classes.btn} ${classes.close}`}

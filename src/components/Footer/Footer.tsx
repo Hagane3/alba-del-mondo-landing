@@ -11,7 +11,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className={classes.root}>
+    <footer id="footer" className={classes.root}>
       <div className={classes.wrapper}>
         <div className={classes.heading}>
           <Image src={footerLogo} alt="footer logo" className={classes.logo} />
