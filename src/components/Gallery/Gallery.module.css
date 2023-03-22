@@ -11,6 +11,7 @@
 
 .root .container {
   position: relative;
+  font-size: 0;
 }
 
 .root .container img {

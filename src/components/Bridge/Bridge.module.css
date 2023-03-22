@@ -2,7 +2,7 @@
   background-color: var(--bg-bridge);
 }
 
-.root .wrapper {
+.root .content {
   padding: 2.875rem 1rem 0 1rem;
 }
 
@@ -22,7 +22,11 @@
 .root .image {
   width: 100%;
   height: auto;
-  max-width: 27.5rem;
+  /* max-width: 27.5rem; */
+}
+
+.root .img_container {
+  font-size: 0;
 }
 
 @media (min-width: 1024px) {
@@ -31,26 +35,39 @@
   }
   .root .wrapper {
     padding: 3.5rem 2.5rem 2.5rem 3.75rem;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 8.4375rem;
+    display: flex;
+    /* grid-template-columns: 3fr 1fr; */
+    justify-content: space-between;
     align-items: center;
   }
 
   .root .content .description p {
     /* font-size: 1.5rem; */
-    line-height: clamp(1.5rem, 3vw, 2.75rem);
+    line-height: clamp(1.5rem, 3.1vw, 2.75rem);
     font-size: clamp(1rem, 1.7vw, 1.5rem);
   }
   .root .content .description {
     gap: 3.75rem;
   }
 
+  .root .content {
+    padding: 0;
+    max-width: 60%;
+  }
+
   .root .wrapper .content h3 {
     font-size: 4rem;
   }
 
-  .root .image {
+  .root .img_container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .root .img_container .image {
+    width: 80%;
     max-width: 27.5rem;
   }
 }

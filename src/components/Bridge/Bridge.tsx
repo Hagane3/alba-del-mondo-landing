@@ -38,7 +38,9 @@ const Bridge = () => {
             </p>
           </div>
         </div>
-        <Image src={img1} alt="bridge img" className={classes.image} />
+        <div className={classes.img_container}>
+          <Image src={img1} alt="bridge img" className={classes.image} />
+        </div>
       </div>
     </section>
   );

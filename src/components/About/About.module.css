@@ -41,11 +41,15 @@
   margin-top: 2.5rem;
 }
 
+.img_container {
+  font-size: 0;
+}
+
 @media (min-width: 1024px) {
   .root {
     display: grid;
     justify-items: center;
-    grid-template-areas: "a b b" "c c c";
+    grid-template-areas: "a a b" "c c c";
     margin: 9.5rem 2.5rem 0 2.5rem;
     column-gap: 8.5rem;
     row-gap: 3.5rem;
@@ -56,34 +60,36 @@
   }
 
   .root .container .heading {
-    width: 27.5rem;
+    /* width: clamp(17rem, 30vw, 27.5rem); */
+    width: 50%;
   }
 
   .root .container .wrapper {
     margin: 0;
   }
 
+  .root .container .wrapper .description p {
+    line-height: clamp(1.5rem, 4vw, 2.75rem);
+    font-size: clamp(1rem, 1.67vw, 1.5rem);
+  }
+
   .cta {
     grid-area: c;
-    width: 27.5rem;
+    width: clamp(17rem, 30vw, 77rem);
   }
 
   .cta_btn {
-    font-size: 2.25rem;
+    font-size: clamp(1rem, 2.5vw, 7rem);
   }
 
-  .image {
+  .img_container {
     grid-area: b;
-    margin-top: 0;
-    max-width: 27.5rem;
-  }
-
-  .root .container .description p {
-    font-size: 1.5rem;
-    line-height: 2.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .root .container .heading h3 {
-    font-size: 4rem;
+    font-size: clamp(1rem, 4.45vw, 12rem);
   }
 }

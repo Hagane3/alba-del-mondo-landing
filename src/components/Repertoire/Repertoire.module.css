@@ -102,11 +102,15 @@
 
   .root .container .sub_heading h4,
   .root .container .sub_heading h5 {
-    font-size: 3rem;
+    font-size: clamp(1rem, 3.35vw, 3rem);
   }
 
   .root .container .content p {
-    font-size: 1.5rem;
-    line-height: 2.75rem;
+    line-height: clamp(1.5rem, 3.1vw, 2.75rem);
+    font-size: clamp(1rem, 1.7vw, 1.5rem);
+  }
+
+  .root .head_container h3 {
+    font-size: clamp(1rem, 4.45vw, 4rem);
   }
 }
