@@ -37,7 +37,9 @@ const Repertoire = () => {
           {REPERTOIRE.map((item) => {
             return (
               <div
-                className={classes.dot}
+                className={`${classes.dot} ${
+                  item.id == repertoireId ? classes.active : ""
+                }`}
                 id={item.id}
                 key={item.id}
                 onClick={changeIdHandler}

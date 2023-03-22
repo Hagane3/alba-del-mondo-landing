@@ -46,6 +46,7 @@
   justify-content: center;
   gap: 0.9rem;
   margin-top: 2.5rem;
+  align-items: center;
 }
 
 .switcher .dot {
@@ -54,6 +55,12 @@
   background-color: var(--dot-regular);
   content: " ";
   border-radius: 50%;
+}
+
+.switcher .dot.active {
+  height: 1.08rem;
+  width: 1.08rem;
+  background-color: var(--bg-quinary);
 }
 
 @media (min-width: 1024px) {
@@ -99,9 +106,17 @@
     width: 1.5625rem;
     height: 1.5625rem;
   }
-
   .root .container .switcher .dot:hover {
     background-color: var(--bg-secondary);
+  }
+
+  .root .container .switcher .dot.active {
+    height: 2.1875rem;
+    width: 2.1875rem;
+  }
+
+  .root .container .switcher .dot.active:hover {
+    background-color: var(--bg-quinary);
   }
 
   .root .container .sub_heading h4,
