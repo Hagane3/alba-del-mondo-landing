@@ -100,6 +100,10 @@
     height: 1.5625rem;
   }
 
+  .root .container .switcher .dot:hover {
+    background-color: var(--bg-secondary);
+  }
+
   .root .container .sub_heading h4,
   .root .container .sub_heading h5 {
     font-size: clamp(1rem, 3.35vw, 3rem);
