@@ -18,7 +18,27 @@ const Navbar = () => {
       <button className={classes.btn} onClick={toggleMenuHandler}>
         <Image src={openMenuIcon} alt="open menu icon" />
       </button>
-      <ul className={`${classes.menu_list} ${isOpen ? classes.active : ""}`}>
+      <ul
+        className={`${classes.menu_list} ${classes.mobile} ${
+          isOpen ? classes.active : ""
+        }`}
+      >
+        <li>O NAS</li>
+        <li>SKŁAD</li>
+        <li>REPERTUAR</li>
+        <li>GALERIA</li>
+        <li>FESTIWAL</li>
+        <li>
+          <button>KONTAKT</button>
+        </li>
+        <button
+          className={`${classes.btn} ${classes.close}`}
+          onClick={toggleMenuHandler}
+        >
+          <Image src={closeMenuIcon} alt="close menu icon" />
+        </button>
+      </ul>
+      <ul className={classes.menu_list}>
         <li>O NAS</li>
         <li>SKŁAD</li>
         <li>REPERTUAR</li>
