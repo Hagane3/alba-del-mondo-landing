@@ -51,7 +51,9 @@ const About = () => {
       <div className={classes.cta}>
         <button className={classes.cta_btn}>SKONTAKTUJ SIĘ Z NAMI</button>
       </div>
-      <Image src={statue} alt="statue" className={classes.image} />
+      <div className={classes.img_container}>
+        <Image src={statue} alt="statue" className={classes.image} />
+      </div>
     </section>
   );
 };
