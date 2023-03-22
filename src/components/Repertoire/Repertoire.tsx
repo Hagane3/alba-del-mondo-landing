@@ -18,7 +18,7 @@ const Repertoire = () => {
   };
 
   return (
-    <section className={classes.root}>
+    <section id="repertoire" className={classes.root}>
       <div className={classes.head_container}>
         <h3 className={classes.heading}>REPERTUAR</h3>
         <div className={classes.image}>

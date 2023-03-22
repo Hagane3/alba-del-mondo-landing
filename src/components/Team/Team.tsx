@@ -11,7 +11,7 @@ import Image from "next/image";
 
 const Team = () => {
   return (
-    <section className={classes.root}>
+    <section id="team" className={classes.root}>
       <div className={classes.heading}>
         <h3>SKŁAD</h3>
       </div>

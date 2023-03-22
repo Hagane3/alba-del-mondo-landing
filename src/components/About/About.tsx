@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <section className={classes.root}>
+    <section id="about" className={classes.root}>
       <div className={classes.container}>
         <div className={classes.heading}>
           <h3>O NAS</h3>

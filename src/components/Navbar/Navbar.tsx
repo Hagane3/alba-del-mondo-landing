@@ -69,11 +69,31 @@ const Navbar = () => {
         </button>
       </ul>
       <ul className={classes.menu_list}>
-        <li>O NAS</li>
-        <li>SKŁAD</li>
-        <li>REPERTUAR</li>
-        <li>GALERIA</li>
-        <li>FESTIWAL</li>
+        <li>
+          <Link to="about" spy={true} activeClass="active" smooth={true}>
+            O NAS
+          </Link>
+        </li>
+        <li>
+          <Link to="team" spy={true} activeClass="active" smooth={true}>
+            SKŁAD
+          </Link>
+        </li>
+        <li>
+          <Link to="repertoire" spy={true} activeClass="active" smooth={true}>
+            REPERTUAR
+          </Link>
+        </li>
+        <li>
+          <Link to="gallery" spy={true} activeClass="active" smooth={true}>
+            GALERIA
+          </Link>
+        </li>
+        <li>
+          <Link to="bridge" spy={true} activeClass="active" smooth={true}>
+            FESTIWAL
+          </Link>
+        </li>
         <li>
           <button>
             {" "}
