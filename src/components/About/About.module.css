@@ -41,6 +41,10 @@
   margin-top: 2.5rem;
 }
 
+.img_container {
+  font-size: 0;
+}
+
 @media (min-width: 1024px) {
   .root {
     display: grid;

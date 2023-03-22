@@ -25,6 +25,10 @@
   /* max-width: 27.5rem; */
 }
 
+.root .img_container {
+  font-size: 0;
+}
+
 @media (min-width: 1024px) {
   .root {
     margin-top: 12.5rem;
@@ -55,8 +59,15 @@
     font-size: 4rem;
   }
 
-  .root .image {
-    width: 30%;
+  .root .img_container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .root .img_container .image {
+    width: 80%;
     max-width: 27.5rem;
   }
 }
