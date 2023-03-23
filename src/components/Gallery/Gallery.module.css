@@ -17,6 +17,13 @@
 .root .container img {
   width: 100%;
   height: auto;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: 1s;
+}
+
+.root .container img:hover {
+  filter: none;
 }
 
 .root .container .heading {
