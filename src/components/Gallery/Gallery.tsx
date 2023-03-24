@@ -1,8 +1,11 @@
 import React from "react";
 import { useState } from "react";
+import { createPortal } from "react-dom";
+
+import Modal from "../UI/Modal/Modal";
 
 import classes from "./Gallery.module.css";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 import gallery from "../../data/GALLERY";
 
@@ -11,6 +14,13 @@ import arrow_right from "../../../public/icons/arrow_right.svg";
 
 const Gallery = () => {
   const [galleryId, setGalleryId] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [activeImage, setActiveImage] = useState(0);
+
+  const toggleModalHandler = (id: number) => {
+    setIsModalOpen((prevState) => !prevState);
+    setActiveImage(id);
+  };
 
   const nextMobileImageHandler = () => {
     if (galleryId === gallery.length - 1) {
@@ -46,15 +56,32 @@ const Gallery = () => {
 
   return (
     <section id="gallery" className={classes.root}>
+      {isModalOpen &&
+        createPortal(
+          <Modal toggleModal={toggleModalHandler} imageId={activeImage} />,
+          document.body
+        )}
       <h3 className={classes.heading}>GALERIA</h3>
       <div className={classes.container}>
         <h3 className={classes.heading}>GALERIA</h3>
         <div className={classes.gallery_mobile}>
           <Image src={gallery[galleryId]} alt="gallery 1" />
         </div>
-        <Image src={gallery[galleryId]} alt="gallery 1" />
-        <Image src={gallery[galleryId + 1]} alt="gallery 2" />
-        <Image src={gallery[galleryId + 2]} alt="gallery 3" />
+        <Image
+          src={gallery[galleryId]}
+          alt="gallery 1"
+          onClick={() => toggleModalHandler(galleryId)}
+        />
+        <Image
+          src={gallery[galleryId + 1]}
+          alt="gallery 2"
+          onClick={() => toggleModalHandler(galleryId + 1)}
+        />
+        <Image
+          src={gallery[galleryId + 2]}
+          alt="gallery 3"
+          onClick={() => toggleModalHandler(galleryId + 2)}
+        />
 
         <div className={`${classes.switcher} ${classes.mobile}`}>
           <button className={classes.left} onClick={previousMobileImageHandler}>
