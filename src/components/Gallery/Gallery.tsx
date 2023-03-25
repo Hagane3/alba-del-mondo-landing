@@ -65,31 +65,34 @@ const Gallery = () => {
       <div className={classes.container}>
         <h3 className={classes.heading}>GALERIA</h3>
         <div className={classes.gallery_mobile}>
-          <Image src={gallery[galleryId]} alt="gallery 1" />
+          <Image src={gallery[galleryId]} alt="gallery 1" priority />
         </div>
         <Image
           src={gallery[galleryId]}
           alt="gallery 1"
           onClick={() => toggleModalHandler(galleryId)}
+          priority
         />
         <Image
           src={gallery[galleryId + 1]}
           alt="gallery 2"
           onClick={() => toggleModalHandler(galleryId + 1)}
+          priority
         />
         <Image
           src={gallery[galleryId + 2]}
           alt="gallery 3"
           onClick={() => toggleModalHandler(galleryId + 2)}
+          priority
         />
 
         <div className={`${classes.switcher} ${classes.mobile}`}>
           <button className={classes.left} onClick={previousMobileImageHandler}>
-            <Image src={arrow_left} alt="arrow left" />
+            <Image src={arrow_left} alt="arrow left" priority />
           </button>
 
           <button className={classes.right} onClick={nextMobileImageHandler}>
-            <Image src={arrow_right} alt="arrow right" />
+            <Image src={arrow_right} alt="arrow right" priority />
           </button>
         </div>
 
@@ -98,11 +101,11 @@ const Gallery = () => {
             className={classes.left}
             onClick={previousDesktopImageHandler}
           >
-            <Image src={arrow_left} alt="arrow left" />
+            <Image src={arrow_left} alt="arrow left" priority />
           </button>
 
           <button className={classes.right} onClick={nextDesktopImageHandler}>
-            <Image src={arrow_right} alt="arrow right" />
+            <Image src={arrow_right} alt="arrow right" priority />
           </button>
         </div>
       </div>
