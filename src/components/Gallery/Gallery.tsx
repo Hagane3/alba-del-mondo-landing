@@ -5,7 +5,9 @@ import { createPortal } from "react-dom";
 import Modal from "../UI/Modal/Modal";
 
 import classes from "./Gallery.module.css";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
+
+import Arrow from "../UI/Arrow/Arrow";
 
 import gallery from "../../data/GALLERY";
 
@@ -88,11 +90,11 @@ const Gallery = () => {
 
         <div className={`${classes.switcher} ${classes.mobile}`}>
           <button className={classes.left} onClick={previousMobileImageHandler}>
-            <Image src={arrow_left} alt="arrow left" priority />
+            <Arrow />
           </button>
 
           <button className={classes.right} onClick={nextMobileImageHandler}>
-            <Image src={arrow_right} alt="arrow right" priority />
+            <Arrow />
           </button>
         </div>
 
@@ -101,11 +103,11 @@ const Gallery = () => {
             className={classes.left}
             onClick={previousDesktopImageHandler}
           >
-            <Image src={arrow_left} alt="arrow left" priority />
+            <Arrow />
           </button>
 
           <button className={classes.right} onClick={nextDesktopImageHandler}>
-            <Image src={arrow_right} alt="arrow right" priority />
+            <Arrow />
           </button>
         </div>
       </div>
