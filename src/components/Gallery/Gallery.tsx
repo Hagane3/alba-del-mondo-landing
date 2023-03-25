@@ -67,25 +67,25 @@ const Gallery = () => {
       <div className={classes.container}>
         <h3 className={classes.heading}>GALERIA</h3>
         <div className={classes.gallery_mobile}>
-          <Image src={gallery[galleryId]} alt="gallery 1" priority />
+          <Image src={gallery[galleryId]} alt="gallery 1" priority={true} />
         </div>
         <Image
           src={gallery[galleryId]}
           alt="gallery 1"
           onClick={() => toggleModalHandler(galleryId)}
-          priority
+          priority={true}
         />
         <Image
           src={gallery[galleryId + 1]}
           alt="gallery 2"
           onClick={() => toggleModalHandler(galleryId + 1)}
-          priority
+          priority={true}
         />
         <Image
           src={gallery[galleryId + 2]}
           alt="gallery 3"
           onClick={() => toggleModalHandler(galleryId + 2)}
-          priority
+          priority={true}
         />
 
         <div className={`${classes.switcher} ${classes.mobile}`}>

@@ -22,7 +22,11 @@ const Repertoire = () => {
       <div className={classes.head_container}>
         <h3 className={classes.heading}>REPERTUAR</h3>
         <div className={classes.image}>
-          <Image src={singleRepertoire.image} alt="repertoire5" priority />
+          <Image
+            src={singleRepertoire.image}
+            alt="repertoire5"
+            priority={true}
+          />
         </div>
       </div>
       <div className={classes.container}>
