@@ -1,0 +1,10 @@
+.root {
+  width: 3.875rem;
+  height: 3.875rem;
+}
+
+@media (min-width: 1024px) {
+  .root:hover path {
+    stroke: var(--bg-tertiary);
+  }
+}
