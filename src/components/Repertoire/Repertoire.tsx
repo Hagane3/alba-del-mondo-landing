@@ -4,6 +4,8 @@ import React, { useEffect, useState } from "react";
 import REPERTOIRE from "@/data/REPERTOIRE";
 
 import classes from "./Repertoire.module.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 
 const Repertoire = () => {
   const [repertoireId, setRepertoireId] = useState<any>(0);
@@ -19,7 +21,49 @@ const Repertoire = () => {
 
   return (
     <section id="repertoire" className={classes.root}>
-      <div className={classes.head_container}>
+      <div className={classes.mobile}>
+        <h3 className={classes.heading}>REPERTUAR</h3>
+        <Swiper
+          slidesPerView={1}
+          onSlideNextTransitionStart={() =>
+            setRepertoireId((prevState: any) => prevState + 1)
+          }
+          onSlidePrevTransitionStart={() =>
+            setRepertoireId((prevState: any) => prevState - 1)
+          }
+        >
+          {REPERTOIRE.map((item) => {
+            return (
+              <SwiperSlide key={item.id}>
+                <div className={classes.image}>
+                  <Image src={item.image} alt="repertoire5" priority={true} />
+                </div>
+                <div className={classes.sub_heading}>
+                  <h4>{item.title}</h4>
+                  <h5>{item.subtitle}</h5>
+                </div>
+                <div className={classes.content}>
+                  <p>{item.description}</p>
+                </div>
+              </SwiperSlide>
+            );
+          })}
+          <div className={classes.switcher}>
+            {REPERTOIRE.map((item) => {
+              return (
+                <div
+                  className={`${classes.dot} ${
+                    item.id == repertoireId ? classes.active : ""
+                  }`}
+                  id={item.id}
+                  key={item.id}
+                ></div>
+              );
+            })}
+          </div>
+        </Swiper>
+      </div>
+      <div className={classes.desktop}>
         <h3 className={classes.heading}>REPERTUAR</h3>
         <div className={classes.image}>
           <Image
@@ -28,28 +72,26 @@ const Repertoire = () => {
             priority={true}
           />
         </div>
-      </div>
-      <div className={classes.container}>
         <div className={classes.sub_heading}>
           <h4>{singleRepertoire.title}</h4>
           <h5>{singleRepertoire.subtitle}</h5>
         </div>
         <div className={classes.content}>
           <p>{singleRepertoire.description}</p>
-        </div>
-        <div className={classes.switcher}>
-          {REPERTOIRE.map((item) => {
-            return (
-              <div
-                className={`${classes.dot} ${
-                  item.id == repertoireId ? classes.active : ""
-                }`}
-                id={item.id}
-                key={item.id}
-                onClick={changeIdHandler}
-              ></div>
-            );
-          })}
+          <div className={classes.switcher}>
+            {REPERTOIRE.map((item) => {
+              return (
+                <div
+                  className={`${classes.dot} ${
+                    item.id == repertoireId ? classes.active : ""
+                  }`}
+                  id={item.id}
+                  key={item.id}
+                  onClick={changeIdHandler}
+                ></div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>

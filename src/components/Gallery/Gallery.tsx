@@ -11,13 +11,11 @@ import Arrow from "../UI/Arrow/Arrow";
 
 import gallery from "../../data/GALLERY";
 
-import arrow_left from "../../../public/icons/arrow_left.svg";
-import arrow_right from "../../../public/icons/arrow_right.svg";
-
 const Gallery = () => {
   const [galleryId, setGalleryId] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [activeImage, setActiveImage] = useState(0);
+  const [isColor, setIsColor] = useState(false);
 
   const toggleModalHandler = (id: number) => {
     setIsModalOpen((prevState) => !prevState);
@@ -56,6 +54,10 @@ const Gallery = () => {
     }
   };
 
+  const changeColorHandler = () => {
+    setIsColor((prevState) => !prevState);
+  };
+
   return (
     <section id="gallery" className={classes.root}>
       {isModalOpen &&
@@ -67,7 +69,13 @@ const Gallery = () => {
       <div className={classes.container}>
         <h3 className={classes.heading}>GALERIA</h3>
         <div className={classes.gallery_mobile}>
-          <Image src={gallery[galleryId]} alt="gallery 1" priority={true} />
+          <Image
+            src={gallery[galleryId]}
+            alt="gallery 1"
+            priority={true}
+            onClick={changeColorHandler}
+            className={isColor ? classes.nofilter : ""}
+          />
         </div>
         <Image
           src={gallery[galleryId]}

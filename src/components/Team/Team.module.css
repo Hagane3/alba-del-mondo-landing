@@ -13,7 +13,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 1.25rem;
-  row-gap: 1rem;
+  row-gap: 3.5rem;
   margin: 0 1rem;
 }
 
@@ -58,6 +58,10 @@
 
   .root .members {
     margin: 0;
+  }
+
+  .root .members .member .description {
+    margin-top: 2rem;
   }
 
   .root .members .member .description h4 {
