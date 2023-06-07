@@ -26,10 +26,6 @@
   transition: 1s;
 }
 
-.root .container img:hover {
-  filter: none;
-}
-
 .root .container .heading {
   display: none;
 }
@@ -56,6 +52,10 @@
 
 .root .container > img {
   display: none;
+}
+
+.root .container .gallery_mobile .nofilter {
+  filter: none;
 }
 
 .root .container .switcher.desktop {
@@ -127,5 +127,9 @@
 
   .root .container .switcher.desktop {
     display: flex;
+  }
+
+  .root .container img:hover {
+    filter: none;
   }
 }
