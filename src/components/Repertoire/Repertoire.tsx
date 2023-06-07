@@ -34,7 +34,7 @@ const Repertoire = () => {
         >
           {REPERTOIRE.map((item) => {
             return (
-              <SwiperSlide>
+              <SwiperSlide key={item.id}>
                 <div className={classes.image}>
                   <Image src={item.image} alt="repertoire5" priority={true} />
                 </div>
@@ -44,24 +44,23 @@ const Repertoire = () => {
                 </div>
                 <div className={classes.content}>
                   <p>{item.description}</p>
-                  <div className={classes.switcher}>
-                    {REPERTOIRE.map((item) => {
-                      return (
-                        <div
-                          className={`${classes.dot} ${
-                            item.id == repertoireId ? classes.active : ""
-                          }`}
-                          id={item.id}
-                          key={item.id}
-                          onClick={changeIdHandler}
-                        ></div>
-                      );
-                    })}
-                  </div>
                 </div>
               </SwiperSlide>
             );
           })}
+          <div className={classes.switcher}>
+            {REPERTOIRE.map((item) => {
+              return (
+                <div
+                  className={`${classes.dot} ${
+                    item.id == repertoireId ? classes.active : ""
+                  }`}
+                  id={item.id}
+                  key={item.id}
+                ></div>
+              );
+            })}
+          </div>
         </Swiper>
       </div>
       <div className={classes.desktop}>
