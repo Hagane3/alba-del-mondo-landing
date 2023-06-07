@@ -49,13 +49,64 @@ const Navbar = () => {
           isOpen ? classes.active : ""
         }`}
       >
-        <li>O NAS</li>
-        <li>SKŁAD</li>
-        <li>REPERTUAR</li>
-        <li>GALERIA</li>
-        <li>FESTIWAL</li>
+        <li>
+          <Link
+            to="about"
+            spy={true}
+            activeClass="active"
+            smooth={true}
+            offset={-60}
+          >
+            O NAS
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="team"
+            spy={true}
+            activeClass="active"
+            smooth={true}
+            offset={-60}
+          >
+            SKŁAD
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="repertoire"
+            spy={true}
+            activeClass="active"
+            smooth={true}
+            offset={-60}
+          >
+            REPERTUAR
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="gallery"
+            spy={true}
+            activeClass="active"
+            smooth={true}
+            offset={-60}
+          >
+            GALERIA
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="bridge"
+            spy={true}
+            activeClass="active"
+            smooth={true}
+            offset={-60}
+          >
+            FESTIWAL
+          </Link>
+        </li>
         <li>
           <button>
+            {" "}
             <Link to="footer" smooth={true}>
               KONTAKT
             </Link>
@@ -70,27 +121,57 @@ const Navbar = () => {
       </ul>
       <ul className={classes.menu_list}>
         <li>
-          <Link to="about" spy={true} activeClass="active" smooth={true}>
+          <Link
+            to="about"
+            spy={true}
+            activeClass="active"
+            smooth={true}
+            offset={-90}
+          >
             O NAS
           </Link>
         </li>
         <li>
-          <Link to="team" spy={true} activeClass="active" smooth={true}>
+          <Link
+            to="team"
+            spy={true}
+            activeClass="active"
+            smooth={true}
+            offset={-90}
+          >
             SKŁAD
           </Link>
         </li>
         <li>
-          <Link to="repertoire" spy={true} activeClass="active" smooth={true}>
+          <Link
+            to="repertoire"
+            spy={true}
+            activeClass="active"
+            smooth={true}
+            offset={-90}
+          >
             REPERTUAR
           </Link>
         </li>
         <li>
-          <Link to="gallery" spy={true} activeClass="active" smooth={true}>
+          <Link
+            to="gallery"
+            spy={true}
+            activeClass="active"
+            smooth={true}
+            offset={-90}
+          >
             GALERIA
           </Link>
         </li>
         <li>
-          <Link to="bridge" spy={true} activeClass="active" smooth={true}>
+          <Link
+            to="bridge"
+            spy={true}
+            activeClass="active"
+            smooth={true}
+            offset={-90}
+          >
             FESTIWAL
           </Link>
         </li>
