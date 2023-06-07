@@ -5,6 +5,10 @@
   padding: 2rem 0;
 }
 
+.root .desktop {
+  display: none;
+}
+
 .root .image {
   height: 19rem;
   width: 100%;
@@ -29,10 +33,12 @@
   color: var(--font-quaternary);
   font-size: 2.125rem;
   font-family: "Bebas Neue", cursive;
+  font-weight: 500;
 }
 
 .root .sub_heading h5 {
   font-size: 2.125rem;
+  font-weight: 500;
   font-family: "Bebas Neue", cursive;
 }
 
@@ -48,7 +54,7 @@
 .switcher {
   display: flex;
   justify-content: center;
-  gap: 0.9rem;
+  gap: 1.625rem;
   margin-top: 2.5rem;
   align-items: center;
 }
@@ -68,11 +74,14 @@
 }
 
 @media (min-width: 1024px) {
-  .root {
+  .root .mobile {
+    display: none;
+  }
+  .root .desktop {
     margin: 26rem 2.5rem 0 2.5rem;
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
-    grid-template-rows: 9rem 1fr;
+    grid-template-rows: 10.5rem 1fr;
     justify-content: space-between;
     row-gap: 1.5rem;
     column-gap: 8rem;
@@ -95,6 +104,9 @@
     grid-column-start: 1;
     grid-row-start: 1;
     max-width: 27.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   /* .root {
@@ -114,7 +126,7 @@
   }
 
   .root .content .switcher {
-    gap: 2.59rem;
+    gap: 3.375rem;
     margin-bottom: 5rem;
   }
 
