@@ -3,6 +3,7 @@ import Image from "next/image";
 import classes from "./Header.module.css";
 import logo_big from "../../../public/img/logo_big.png";
 import arrow_down from "../../../public/icons/arrow_down.svg";
+import { Link } from "react-scroll";
 
 const Header = () => {
   return (
@@ -14,7 +15,15 @@ const Header = () => {
           <h2>early music ensamble</h2>
         </div>
         <button className={classes.arrow_down}>
-          <Image src={arrow_down} alt="arrow down" />
+          <Link
+            to="about"
+            spy={true}
+            activeClass="active"
+            smooth={true}
+            offset={-60}
+          >
+            <Image src={arrow_down} alt="arrow down" />
+          </Link>
         </button>
       </div>
     </header>
